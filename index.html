@@ -3269,7 +3269,7 @@
     // =============================================
     // ⚙️  CẤU HÌNH — dán URL Apps Script vào đây
     // =============================================
-    var APPS_SCRIPT_URL = 'https://script.google.com/a/macros/zmarketing.vn/s/AKfycbyRFPGi_E1e8syIh5Khnk_Z3wsNzgcAlPhYs1sZjhKa-WYw4p6uf0SUBQ9ULV6_RGCiEw/exec';
+    var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbypka15Ju5GnZPLBRAWgAWsMw_CnPvnyKXDwCDYxrE6hX4KhU5F4sfZy2Pwzg9J-YY/exec';
     // =============================================
 
     function scrollToForm() {
@@ -3405,17 +3405,23 @@
       };
 
       // — Send to Google Sheets —
+      console.log('Sending payload:', payload); // Debug: xem dữ liệu gửi đi
+      
       if (APPS_SCRIPT_URL && APPS_SCRIPT_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
         fetch(APPS_SCRIPT_URL, {
           method: 'POST',
-          mode: 'no-cors',
+          mode: 'no-cors', // Bắt buộc để tránh lỗi CORS với Google
+          headers: {
+            'Content-Type': 'text/plain' // Tránh pre-flight OPTIONS request
+          },
           body: JSON.stringify(payload)
         })
           .then(function () {
+            console.log('Request sent successfully (Opaque response)');
             onSubmitSuccess(btn, name, phone, city, goal, course);
           })
-          .catch(function () {
-            // Vẫn show success — no-cors không cho biết lỗi thật
+          .catch(function (error) {
+            console.error('Submission error:', error); // Hiện lỗi thật ra console
             onSubmitSuccess(btn, name, phone, city, goal, course);
           });
       } else {
@@ -3471,7 +3477,7 @@
     window.addEventListener('scroll', function () {
       var stickyBar = document.getElementById('sticky-bar');
       var footer = document.querySelector('footer');
-      if (!footer) return;
+      if (!stickyBar || !footer) return; // Thêm kiểm tra null
       var footerTop = footer.getBoundingClientRect().top;
       stickyBar.style.display = footerTop < window.innerHeight ? 'none' : 'flex';
     });

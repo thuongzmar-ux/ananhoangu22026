@@ -3228,46 +3228,35 @@
           <label style="margin-bottom: 10px; display: block; font-weight: 700;">Hình thức học mong muốn:</label>
           <div class="course-options-container" id="hero-course-options" style="display: grid; grid-template-columns: 1fr; gap: 8px;">
 
-            <label class="course-option-card" for="hero-opt-dinh-huong" onclick="selectCourse(this, 'Định Hướng', 'hero-btn')">
-              <input type="radio" name="hero-reg-course" id="hero-opt-dinh-huong" value="Dinh huong 0D" style="display:none;">
+            <label class="course-option-card" for="hero-opt-goi-1" onclick="selectCourse(this, 'Lớp Dạy Order (Gói 1)', 'hero-btn')">
+              <input type="radio" name="hero-reg-course" id="hero-opt-goi-1" value="Goi 1 0D" style="display:none;">
               <div class="course-option-left">
                 <div class="course-option-dot"></div>
                 <div>
-                  <div class="course-option-name">Định Hướng</div>
-                  <div class="course-option-format">Học thử miễn phí</div>
+                  <div class="course-option-name">Gói 1: Lớp Dạy Order</div>
+                  <div class="course-option-format">Miễn phí tham gia</div>
                 </div>
               </div>
             </label>
 
-            <label class="course-option-card" for="hero-opt-workshop" onclick="selectCourse(this, 'Thực Hành Căn Bản', 'hero-btn')">
-              <input type="radio" name="hero-reg-course" id="hero-opt-workshop" value="Workshop 199K" style="display:none;">
+            <label class="course-option-card course-option-featured" for="hero-opt-goi-2" onclick="selectCourse(this, 'Lớp 21 Ngày Thực Chiến (Gói 2)', 'hero-btn')">
+              <input type="radio" name="hero-reg-course" id="hero-opt-goi-2" value="Goi 2 1TR" style="display:none;">
               <div class="course-option-left">
                 <div class="course-option-dot"></div>
                 <div>
-                  <div class="course-option-name">Căn Bản <span style="color:var(--red);font-weight:800;font-size:12px;">199K</span></div>
-                  <div class="course-option-format">1 Zoom + Video</div>
+                  <div class="course-option-name">Gói 2: 21 Ngày Thực Chiến <span style="background:var(--gold);color:#7a1520;font-size:10px;padding:2px 5px;border-radius:10px;margin-left:2px;font-weight:800;">🔥 HOT</span></div>
+                  <div class="course-option-format">Giảm còn 1.000.000₫</div>
                 </div>
               </div>
             </label>
 
-            <label class="course-option-card course-option-featured" for="hero-opt-online" onclick="selectCourse(this, 'Thực Chiến Online', 'hero-btn')">
-              <input type="radio" name="hero-reg-course" id="hero-opt-online" value="Elearning 4TR" style="display:none;">
+            <label class="course-option-card" for="hero-opt-goi-3" onclick="selectCourse(this, 'Lớp Chuyên Sâu (Gói 3)', 'hero-btn')">
+              <input type="radio" name="hero-reg-course" id="hero-opt-goi-3" value="Goi 3 4TR" style="display:none;">
               <div class="course-option-left">
                 <div class="course-option-dot"></div>
                 <div>
-                  <div class="course-option-name">Thực Chiến <span style="background:var(--gold);color:#7a1520;font-size:10px;padding:2px 5px;border-radius:10px;margin-left:2px;font-weight:800;">🔥 HOT</span></div>
-                  <div class="course-option-format">4 chặng Zoom</div>
-                </div>
-              </div>
-            </label>
-
-            <label class="course-option-card" for="hero-opt-offline" onclick="selectCourse(this, 'Chuyên Sâu Offline', 'hero-btn')">
-              <input type="radio" name="hero-reg-course" id="hero-opt-offline" value="Offline 8TR" style="display:none;">
-              <div class="course-option-left">
-                <div class="course-option-dot"></div>
-                <div>
-                  <div class="course-option-name">Chuyên Sâu 1:1</div>
-                  <div class="course-option-format">Offline Đà Nẵng</div>
+                  <div class="course-option-name">Gói 3: Chuyên Sâu Master</div>
+                  <div class="course-option-format">Giảm còn 4.000.000₫</div>
                 </div>
               </div>
             </label>
@@ -4036,21 +4025,24 @@
             style="flex: 0 0 calc(33.333% - 16px); border: 2px dashed #f1d5a2; background: #fffcf5; border-radius: 20px; padding: 32px 24px 28px; position: relative; text-align: left; transition: box-shadow 0.3s, transform 0.3s; cursor: pointer; box-sizing: border-box;"
             onclick="slidePrice(0, this)">
             <!-- Label -->
-            <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:#f1d5a2; color:#8a5a00; font-size:10px; font-weight:900; padding:5px 14px; border-radius:20px; white-space:nowrap; letter-spacing:0.5px;">DÀNH CHO NGƯỜI MỚI</div>
+            <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:#f1d5a2; color:#8a5a00; font-size:10px; font-weight:900; padding:5px 14px; border-radius:20px; white-space:nowrap; letter-spacing:0.5px;">GÓI 1</div>
             <!-- Spots left -->
             <div style="display: flex; justify-content: flex-end; margin-bottom: 12px;">
-              <span style="background: #fff8ed; border: 1px solid #f1d5a2; color: #8a5a00; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">Còn 5 chỗ</span>
+              <span style="background: #fff8ed; border: 1px solid #f1d5a2; color: #8a5a00; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">Dành cho người mới</span>
             </div>
-            <div style="font-size: 13px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Định Hướng & Thực Hành</div>
-            <div style="font-size: 22px; font-weight: 900; color: var(--text); margin-bottom: 4px;">CƠ BẢN</div>
-            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">(1 buổi Zoom + kho video)</div>
-            <div style="font-size: 32px; font-weight: 900; color: var(--red); margin-bottom: 4px;">199.000₫</div>
-            <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 20px; text-decoration: line-through;">1.000.000₫ &nbsp;<span style="text-decoration:none; color:var(--red); font-weight:700; background:#fff5f5; padding:2px 7px; border-radius:6px;">-80%</span></div>
+            <div style="font-size: 13px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">LỚP DẠY ORDER</div>
+            <div style="font-size: 22px; font-weight: 900; color: var(--text); margin-bottom: 4px;">TAOBAO, 1688</div>
+            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">(Học phí 0 Đồng)</div>
+            <div style="font-size: 32px; font-weight: 900; color: var(--red); margin-bottom: 4px;">0₫</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 20px;">Miễn phí tham gia</div>
             <ul class="price-features" style="margin-bottom: 24px;">
-              <li>Buổi học định hướng nghề Order (1 buổi Zoom)</li>
-              <li>Kho video hướng dẫn mua hàng cơ bản</li>
-              <li>Tài liệu & Checklist cơ bản</li>
-              <li>Nhóm hỗ trợ chung</li>
+              <li>1 buổi zoom online</li>
+              <li>Tư duy & bản đồ khởi nghiệp cá nhân</li>
+              <li>Các nguồn thu nhập từ nghề order</li>
+              <li>Công thức 6 bước khởi nghiệp order bền vững</li>
+              <li>Tổng quan 5 nền tảng: Taobao/1688/pinduoduo/dewu/xiaohongshu</li>
+              <li>Quy trình 7 bước order: tạo tài khoản/ tìm nguồn/ check shop/ thanh toán/ vận chuyển/ khiếu nại/ tính giá về tay</li>
+              <li>Tặng 400 shop uy tín trên Taobao/1688</li>
             </ul>
             <a href="#dang-ky" class="btn-price" style="display: block; text-align: center; background:#f1d5a2; border-color:#f1d5a2; color:#5a3800; border-radius: 10px;">Đăng ký ngay</a>
           </div>
@@ -4060,26 +4052,29 @@
             style="flex: 0 0 calc(33.333% - 16px); background: linear-gradient(160deg, #bf2436 0%, #8a1a27 100%); border: 2px solid var(--gold); border-radius: 20px; padding: 32px 24px 28px; position: relative; text-align: left; transition: box-shadow 0.3s, transform 0.3s; cursor: pointer; box-sizing: border-box; box-shadow: 0 24px 60px rgba(191,36,54,0.35); transform: translateY(-8px);"
             onclick="slidePrice(0, this)">
             <!-- Badge -->
-            <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background: var(--gold); color:#7a1520; font-size:11px; font-weight:900; padding:5px 16px; border-radius:20px; white-space:nowrap; letter-spacing:0.5px; box-shadow: 0 4px 12px rgba(249,223,172,0.4);">🔥 PHỔ BIẾN NHẤT</div>
+            <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background: var(--gold); color:#7a1520; font-size:11px; font-weight:900; padding:5px 16px; border-radius:20px; white-space:nowrap; letter-spacing:0.5px; box-shadow: 0 4px 12px rgba(249,223,172,0.4);">🔥 GÓI 2 (HOT)</div>
             <!-- Spots left -->
             <div style="display: flex; justify-content: flex-end; margin-bottom: 12px;">
-              <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">⚡ Còn 3 chỗ!</span>
+              <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">⚡ Phổ biến nhất</span>
             </div>
-            <div style="font-size: 13px; font-weight: 800; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Nhập Hàng Thực Chiến</div>
-            <div style="font-size: 22px; font-weight: 900; color: #fff; margin-bottom: 4px;">ONLINE</div>
-            <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 20px;">(4 chặng học Zoom trực tiếp)</div>
-            <div style="font-size: 32px; font-weight: 900; color: var(--gold); margin-bottom: 4px;">4.000.000₫</div>
-            <div style="font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 20px; text-decoration: line-through;">6.000.000₫ &nbsp;<span style="text-decoration:none; color: var(--gold); font-weight:700; background:rgba(255,255,255,0.12); padding:2px 7px; border-radius:6px;">-33%</span></div>
+            <div style="font-size: 13px; font-weight: 800; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">LỚP 21 NGÀY THỰC CHIẾN</div>
+            <div style="font-size: 22px; font-weight: 900; color: #fff; margin-bottom: 4px;">ORDER TAOBAO, 1688</div>
+            <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 20px;">(Học phí 2tr, giảm còn 1tr)</div>
+            <div style="font-size: 32px; font-weight: 900; color: var(--gold); margin-bottom: 4px;">1.000.000₫</div>
+            <div style="font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 20px; text-decoration: line-through;">2.000.000₫ &nbsp;<span style="text-decoration:none; color: var(--gold); font-weight:700; background:rgba(255,255,255,0.12); padding:2px 7px; border-radius:6px;">-50%</span></div>
             <ul style="list-style:none; padding:0; margin:0 0 24px; display:flex; flex-direction:column; gap:9px;">
-              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> 4 chặng học trực tiếp cùng cô Tịnh (Zoom)</li>
-              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Thực hành trên cả 5 sàn TQ</li>
-              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> 21 bài chia 4 module chi tiết</li>
-              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Khóa tiếng Trung cơ bản kèm theo</li>
-              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Tài liệu trị giá 3.000.000₫</li>
-              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Mentor hỗ trợ 3 năm</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Vào cộng đồng kín</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Cầm tay chỉ việc 1-1 thao tác order, hàng về tận nhà</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> 1 buổi trực tuyến với mentor</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Thực hành 21 ngày làm order cùng team An An Hoa Ngữ</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Có kế hoạch / check list sẵn</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Được chỉnh sửa & cố vấn thực hành</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Đồng hành & hỗ trợ trong 1 năm</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> file 1000 từ vựng + mẫu câu đàm phán bằng tiếng trung</li>
+              <li style="display:flex; align-items:flex-start; gap:8px; font-size:14px; color:#fff;"><span class="premium-tick">✓</span> Hỗ trợ giới thiệu đơn vị vận chuyển - nạp tệ</li>
             </ul>
             <a href="#dang-ky" style="display:block; text-align:center; padding:14px; background:#fff; color:var(--red); border-radius:10px; font-weight:900; font-size:16px; text-decoration:none; box-shadow: 0 8px 24px rgba(0,0,0,0.2); transition:0.2s;"
-               onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='none';">Tôi muốn khóa này →</a>
+               onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='none';">Đăng ký ngay →</a>
           </div>
 
           <!-- GÓI 3: CHUYÊN SÂU -->
@@ -4087,23 +4082,31 @@
             style="flex: 0 0 calc(33.333% - 16px); border: 2px solid rgba(191,36,54,0.2); background: #fff; border-radius: 20px; padding: 32px 24px 28px; position: relative; text-align: left; transition: box-shadow 0.3s, transform 0.3s; cursor: pointer; box-sizing: border-box;"
             onclick="slidePrice(0, this)">
             <!-- Label -->
-            <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background: var(--red); color:#fff; font-size:10px; font-weight:900; padding:5px 14px; border-radius:20px; white-space:nowrap; letter-spacing:0.5px;">⭐ CAO CẤP NHẤT</div>
+            <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background: var(--red); color:#fff; font-size:10px; font-weight:900; padding:5px 14px; border-radius:20px; white-space:nowrap; letter-spacing:0.5px;">⭐ GÓI 3</div>
             <!-- Spots left -->
             <div style="display: flex; justify-content: flex-end; margin-bottom: 12px;">
-              <span style="background: #fff5f5; border: 1px solid rgba(191,36,54,0.2); color: var(--red); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">Chỉ 2 chỗ/tháng</span>
+              <span style="background: #fff5f5; border: 1px solid rgba(191,36,54,0.2); color: var(--red); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">Cao cấp nhất</span>
             </div>
-            <div style="font-size: 13px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Chuyên Sâu Nghề Order</div>
-            <div style="font-size: 22px; font-weight: 900; color: var(--text); margin-bottom: 4px;">OFFLINE 1:1</div>
-            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">(Học trực tiếp tại Đà Nẵng)</div>
-            <div style="font-size: 32px; font-weight: 900; color: var(--red); margin-bottom: 4px;">8.000.000₫</div>
-            <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 20px; text-decoration: line-through;">15.000.000₫ &nbsp;<span style="text-decoration:none; color:var(--red); font-weight:700; background:#fff5f5; padding:2px 7px; border-radius:6px;">-47%</span></div>
+            <div style="font-size: 13px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">LỚP CHUYÊN SÂU ORDER</div>
+            <div style="font-size: 22px; font-weight: 900; color: var(--text); margin-bottom: 4px;">TỪ ZERO ĐẾN MASTER</div>
+            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">(Học phí 8tr, ưu đãi 50%)</div>
+            <div style="font-size: 32px; font-weight: 900; color: var(--red); margin-bottom: 4px;">4.000.000₫</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 20px; text-decoration: line-through;">8.000.000₫ &nbsp;<span style="text-decoration:none; color:var(--red); font-weight:700; background:#fff5f5; padding:2px 7px; border-radius:6px;">-50%</span></div>
             <ul class="price-features" style="margin-bottom: 24px;">
-              <li>Học trực tiếp tại VP cùng cô Tịnh (Đà Nẵng)</li>
-              <li>Nguồn hàng xưởng giá gốc độc quyền</li>
-              <li>Mentor 1:1 cá nhân hóa lộ trình</li>
-              <li>Hỗ trợ trọn đời – ưu tiên cao nhất</li>
+              <li>4 buổi trực tuyến với mentor</li>
+              <li>Học từ thao tác đến tư duy nhập hàng kinh doanh</li>
+              <li>Mentor trực tiếp cố vấn & định hướng mở shop</li>
+              <li>Vào cộng đồng kín</li>
+              <li>Cầm tay chỉ việc 1-1 thao tác order từ a-z, hàng về tận nhà.</li>
+              <li>Đồng hành & hỗ trợ trong 3 năm</li>
+              <li>Được học lại miễn phí trong vòng 6 tháng.</li>
+              <li>Video Record 4 buổi học</li>
+              <li>Tặng kèm 21 video lớp nhập hàng TQ Thực Chiến</li>
+              <li>Tặng kèm CHAT BOT AI - trợ lý tiếng Trung mua hàng</li>
+              <li>Tặng kèm 2 lớp tiếng Trung cơ bản + thương mại</li>
+              <li>Hỗ trợ giới thiệu đơn vị vận chuyển - nạp tệ</li>
             </ul>
-            <a href="#dang-ky" class="btn-price outline" style="display: block; text-align: center; border-radius: 10px;">Tư vấn thêm</a>
+            <a href="#dang-ky" class="btn-price outline" style="display: block; text-align: center; border-radius: 10px;">Đăng ký ngay</a>
           </div>
 
         </div><!-- end track -->
@@ -4481,46 +4484,35 @@
           <label style="margin-bottom: 10px; display: block; font-weight: 700;">Hình thức học mong muốn:</label>
           <div id="course-options" style="display: grid; grid-template-columns: 1fr; gap: 8px;">
 
-            <label class="course-option-card" for="opt-dinh-huong" onclick="selectCourse(this, 'Định Hướng', '0₫')">
-              <input type="radio" name="reg-course" id="opt-dinh-huong" value="Dinh huong 0D" style="display:none;">
+            <label class="course-option-card" for="opt-goi-1" onclick="selectCourse(this, 'Lớp Dạy Order (Gói 1)', '0₫')">
+              <input type="radio" name="reg-course" id="opt-goi-1" value="Goi 1 0D" style="display:none;">
               <div class="course-option-left">
                 <div class="course-option-dot"></div>
                 <div>
-                  <div class="course-option-name">Định Hướng</div>
-                  <div class="course-option-format">Học thử miễn phí</div>
+                  <div class="course-option-name">Gói 1: Lớp Dạy Order</div>
+                  <div class="course-option-format">Miễn phí tham gia</div>
                 </div>
               </div>
             </label>
 
-            <label class="course-option-card" for="opt-workshop" onclick="selectCourse(this, 'Thực Hành Căn Bản', '199K')">
-              <input type="radio" name="reg-course" id="opt-workshop" value="Workshop 199K" style="display:none;">
+            <label class="course-option-card course-option-featured" for="opt-goi-2" onclick="selectCourse(this, 'Lớp 21 Ngày Thực Chiến (Gói 2)', '1TR')">
+              <input type="radio" name="reg-course" id="opt-goi-2" value="Goi 2 1TR" style="display:none;">
               <div class="course-option-left">
                 <div class="course-option-dot"></div>
                 <div>
-                  <div class="course-option-name">Căn Bản <span style="color:var(--red);font-weight:800;font-size:12px;">199K</span></div>
-                  <div class="course-option-format">1 Zoom + Video</div>
+                  <div class="course-option-name">Gói 2: 21 Ngày Thực Chiến <span style="background:var(--gold);color:#7a1520;font-size:10px;padding:2px 5px;border-radius:10px;margin-left:2px;font-weight:800;">🔥 HOT</span></div>
+                  <div class="course-option-format">Giảm còn 1.000.000₫</div>
                 </div>
               </div>
             </label>
 
-            <label class="course-option-card course-option-featured" for="opt-online" onclick="selectCourse(this, 'Thực Chiến Online', '4TR')">
-              <input type="radio" name="reg-course" id="opt-online" value="Elearning 4TR" style="display:none;">
+            <label class="course-option-card" for="opt-goi-3" onclick="selectCourse(this, 'Lớp Chuyên Sâu (Gói 3)', '4TR')">
+              <input type="radio" name="reg-course" id="opt-goi-3" value="Goi 3 4TR" style="display:none;">
               <div class="course-option-left">
                 <div class="course-option-dot"></div>
                 <div>
-                  <div class="course-option-name">Thực Chiến <span style="background:var(--gold);color:#7a1520;font-size:10px;padding:2px 5px;border-radius:10px;margin-left:2px;font-weight:800;">🔥 HOT</span></div>
-                  <div class="course-option-format">4 chặng Zoom</div>
-                </div>
-              </div>
-            </label>
-
-            <label class="course-option-card" for="opt-offline" onclick="selectCourse(this, 'Chuyên Sâu Offline', '8TR')">
-              <input type="radio" name="reg-course" id="opt-offline" value="Offline 8TR" style="display:none;">
-              <div class="course-option-left">
-                <div class="course-option-dot"></div>
-                <div>
-                  <div class="course-option-name">Chuyên Sâu 1:1</div>
-                  <div class="course-option-format">Offline Đà Nẵng</div>
+                  <div class="course-option-name">Gói 3: Chuyên Sâu Master</div>
+                  <div class="course-option-format">Giảm còn 4.000.000₫</div>
                 </div>
               </div>
             </label>

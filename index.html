@@ -2892,6 +2892,23 @@
       justify-content: center;
     }
   </style>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '560076750803440');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=560076750803440&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -3782,13 +3799,17 @@
           Preview Khóa Học
         </div>
         <h3 style="font-size: 26px; font-weight: 900; color: var(--text); margin-bottom: 30px; text-transform: uppercase;">
-          KẾT QUẢ THỰC TẾ CỦA HỌC VIÊN<br>CÙNG PHƯƠNG PHÁP 3Đ
+          XEM TRƯỚC NỘI DUNG KHÓA HỌC<br>CÙNG PHƯƠNG PHÁP 3Đ
         </h3>
         <div class="solution-header-video" style="max-width: 1000px; margin: 0 auto; position: relative; padding: 0 16px;">
-          <video controls poster="images/teaching_class.png" style="width: 100%; border-radius: 20px; box-shadow: 0 25px 60px rgba(0,0,0,0.2); border: 2px solid rgba(0,0,0,0.05); display: block;">
-            <source src="images/PV học viên.mp4" type="video/mp4">
-            Trình duyệt của bạn không hỗ trợ phát video này.
-          </video>
+          <iframe 
+            src="https://www.youtube.com/embed/RNnRQ7VWGh0" 
+            title="Preview Khóa Học" 
+            style="width: 100%; aspect-ratio: 16/9; border-radius: 20px; box-shadow: 0 25px 60px rgba(0,0,0,0.2); border: 2px solid rgba(0,0,0,0.05); display: block;" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
       
@@ -4964,6 +4985,11 @@
     }
 
     function onSubmitSuccess(btn, name, phone, city, goal, course) {
+      // Tracking sự kiện CompleteRegistration cho Meta Pixel
+      if (typeof fbq === 'function') {
+        fbq('track', 'CompleteRegistration');
+      }
+
       btn.innerHTML = '✅ Đăng ký thành công!';
       btn.style.background = '#2d7a3a';
       showModal();
